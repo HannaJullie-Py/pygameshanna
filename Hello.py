@@ -5,8 +5,8 @@ import numpy as np
 st.title('AnaPH')
 st.write('#Analisamos seu consumo de energia')
 df = pd.DataFrame({
-  'primeira coluna': [1, 2, 3, 4],
-  'segunda coluna': [10, 20, 30, 40]
+  'Jogos do Pedro': ['Marvel Snap'],
+  'Jogos da Hanna': ['Butterfly Soup']
 })
 
 df
