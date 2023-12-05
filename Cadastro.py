@@ -5,4 +5,5 @@ import time
 
 usu = st.text_input('Crie seu nome de usuário')
 pas = st.text_input('Crie sua senha')
-   
+if usu and pas:
+   st.write('Conta criada')
