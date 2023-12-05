@@ -12,4 +12,4 @@ if butao:
   st.write('Conta criada :D')
   usu1 = usu
   pas1 = pas
-st.write(usu1,pas1)
+st.write(f'Usuario {usu1} e senha {pas1}')
