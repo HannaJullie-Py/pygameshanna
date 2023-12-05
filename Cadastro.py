@@ -8,6 +8,7 @@ st.title('ANAPH - Analisamos o seu consumo de energia elétrica!')
 
 usu = st.text_input('Crie seu nome de usuário','Usuário')
 pas = st.text_input('Crie sua senha','Senha')
+st.write('Enter em cada uma das caixas para criar')
 
 butao = st.button('Criar')
 
