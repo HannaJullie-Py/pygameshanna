@@ -10,6 +10,4 @@ butao = st.button('Criar')
 
 if butao:
   st.write('Conta criada :D')
-  usu1 = usu
-  pas1 = pas
-  st.write(f'Usuario {usu1} e senha {pas1}')
+
