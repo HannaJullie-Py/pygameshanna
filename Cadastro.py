@@ -3,12 +3,14 @@ import pandas as pd
 import numpy as np
 import time
 
-butao = st.button('Criar')
+def cadastro():
+  usu = st.text_input('Crie seu nome de usuário','Usuário')
+  pas = st.text_input('Crie sua senha','Senha')
 
-usu = st.text_input('Crie seu nome de usuário','Usuário')
-pas = st.text_input('Crie sua senha','Senha')
+st.session_state['cadastro'] = cadastro
+
+butao = st.button('Criar', on_click=cadastro, args= (st.session_state['cadastro']))
 
 if butao:
-  print ('Conta criada :D')
-  usu and pas
+  st.write('Conta criada :D')
 
