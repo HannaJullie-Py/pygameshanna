@@ -8,3 +8,5 @@ df = pd.DataFrame({
   'primeira coluna': [1, 2, 3, 4],
   'segunda coluna': [10, 20, 30, 40]
 })
+
+df
