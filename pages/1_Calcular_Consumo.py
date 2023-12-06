@@ -13,7 +13,7 @@ hd = st.number_input('Digite o tempo de uso diário em horas')
 nd = st.number_input('Digite o numero de dias que usou esse aparelho no mês')
 opcao = st.selectbox(
     'Selecione o produto que queira calcular',
-    ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador', 'Geladeira','TV', 'Ventilador','Máquina de Lavar Roupa', 'Liquidificador', 'Aspirador de Pó', "Micro-ondas"))
+    ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar','Notebook', 'Impressora','Impressora 3D', 'Portão Elétrico', 'Computador', 'Geladeira','TV', 'Ventilador','Máquina de Lavar Roupa', 'Liquidificador', 'Aspirador de Pó', 'Micro-ondas'))
 
 st.divider()
 
@@ -79,6 +79,30 @@ if opcao == 'Aspirador de Pó':
     st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
 if opcao == 'Micro-ondas':
     pot = 1300
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Notebook':
+    pot = 50
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Impressora':
+    pot = 50
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Impressora 3D':
+    pot = 50
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Portão Elétrico':
+    pot = 745.7
     con = pot*hd*nd/1000
     with st.spinner('Carregando...'):
         time.sleep(5)
