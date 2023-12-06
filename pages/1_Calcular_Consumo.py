@@ -16,7 +16,7 @@ opcao = st.selectbox(
     ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador'))
 st.caption('Você selecionou', opcao)
 
-match opcao
+match opcao:
 case 'Chuveiro Elétrico':
     pot = 5000
     con = pot*hd*nd/1000
