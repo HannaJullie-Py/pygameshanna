@@ -53,3 +53,21 @@ if opcao == 'TV':
     with st.spinner('Carregando...'):
         time.sleep(5)
     st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Ventilador':
+    pot = 100
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Máquina de Lavar Roupa':
+    pot = 1500
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Liquidificador':
+    pot = 400
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
