@@ -13,5 +13,5 @@ if pas1 != pas:
   st.caption(':red[Senha não confere]')
 
 if butao:
-  st.write('Conta criada :D')
+  st.caption(':green[Conta criada :D]')
 
