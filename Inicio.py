@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import time
 
+st.header('ANAPH', divider='rainbow')
 st.set_page_config(page_title="ANAPH",page_icon="💡")
 st.sidebar.header("ANAPH")
 
