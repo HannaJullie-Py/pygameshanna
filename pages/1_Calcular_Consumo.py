@@ -14,8 +14,7 @@ nd = st.number_input('Digite o numero de dias que usou esse aparelho no mês')
 opcao = st.selectbox(
     'Selecione o produto que queira calcular',
     ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador'))
-match opcao:
-case 'Chuveiro Elétrico':
+if opcao == 'Chuveiro Elétrico':
     pot = 5000
     con = pot*hd*nd/1000
     st.write(f'Seu gasto mensal será de {con} Kw/h, portanto R$ {0.48*con:.2f}.')
