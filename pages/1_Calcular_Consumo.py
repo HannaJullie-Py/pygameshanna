@@ -13,7 +13,7 @@ hd = st.number_input('Digite o tempo de uso diário em horas')
 nd = st.number_input('Digite o numero de dias que usou esse aparelho no mês')
 opcao = st.selectbox(
     'Selecione o produto que queira calcular',
-    ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador'))
+    ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador', 'Geladeira','TV', 'Ventilador','Máquina de Lavar Roupa', 'Liquidificador'))
 
 st.divider()
 
@@ -37,6 +37,18 @@ if opcao == 'Ferro de Passar':
     st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
 if opcao == 'Computador':
     pot = 550
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Geladeira':
+    pot = 100
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'TV':
+    pot = 150
     con = pot*hd*nd/1000
     with st.spinner('Carregando...'):
         time.sleep(5)
