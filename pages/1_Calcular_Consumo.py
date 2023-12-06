@@ -29,3 +29,9 @@ if opcao == 'Ar Condicionado':
     with st.spinner('Carregando...'):
         time.sleep(5)
     st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
+if opcao == 'Computador':
+    pot = 550
+    con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
+    st.write(f'Seu gasto mensal será de {con:.2f} Kw/h, portanto R$ {0.48*con:.2f}.')
