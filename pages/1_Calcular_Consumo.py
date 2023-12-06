@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import time
 
 st.set_page_config(page_title="Calcular Consumo", page_icon="⚡")
 st.markdown("# Calcular Consumo")
@@ -17,4 +18,6 @@ opcao = st.selectbox(
 if opcao == 'Chuveiro Elétrico':
     pot = 5000
     con = pot*hd*nd/1000
+    with st.spinner('Carregando...'):
+        time.sleep(5)
     st.write(f'Seu gasto mensal será de {con} Kw/h, portanto R$ {0.48*con:.2f}.')
