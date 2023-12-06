@@ -14,8 +14,6 @@ nd = st.number_input('Digite o numero de dias que usou esse aparelho no mês')
 opcao = st.selectbox(
     'Selecione o produto que queira calcular',
     ('Chuveiro Elétrico', 'Ar Condicionado', 'Ferro de Passar', 'Computador'))
-st.caption('Você selecionou', opcao)
-
 match opcao:
 case 'Chuveiro Elétrico':
     pot = 5000
