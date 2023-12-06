@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import time
 
-st.set_page_config(' 
+st.set_page_config(page_title="Cadastro",page_icon="📄")
+
 usu = st.text_input('Crie seu nome de usuário')
 pas = st.text_input('Crie sua senha')
 pas1 = st.text_input('Confirme sua senha')
